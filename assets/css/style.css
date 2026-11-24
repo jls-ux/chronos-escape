@@ -1,0 +1,102 @@
+:root{
+    /*couleurs*/
+    --color-main:rgb(10, 10, 95);
+    --color-sec:rgb(161, 161, 38);
+    --color-ter:rgb(33, 33, 146);
+    --color-txt1:rgb(228, 223, 223);
+    --color-dark:black;
+    /*espaces*/
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+}
+
+/*efface les obstacles*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    position: relative;
+    color:var(--color-txt1);
+}
+
+/*txt options*/
+h1{
+    font-size: 2em;
+}
+h2{
+    font-size: 3em;
+}
+h3{
+    font-size: 1.5em;
+}
+span,p{
+    font-size: 1em;
+}
+.bold{
+    font-weight: bold;
+}
+.yellow{
+    color:var(--color-sec);
+}
+
+/*header*/
+header{
+    height: auto;
+    background-color: var(--color-main);
+    padding: var(--spacing-sm) 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid;
+    border-color: var(--color-ter);
+}
+
+/*main*/
+main{
+    background-color: var(--color-main);
+    padding: 5vh 5vw;
+}
+
+/*la ou ya les cartes*/
+.cardhold{
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) 0;
+
+}
+
+/*cartes*/
+.card{
+    background-color: var(--color-ter);
+    border-radius: 10px;
+    width: xx;
+    padding: var(--spacing-sm) 0;
+}
+.card > *:not(img){
+    padding: 0 var(--spacing-sm);
+}
+.card div{
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
+
+}
+.card .but{
+    width: 80%;
+    margin: var(--spacing-sm) 10% 0 10%;
+    padding: var(--spacing-xs) 0;
+    background-color: var(--color-sec);
+    border-radius: 5px;
+    text-align: center;
+    color: var(--color-dark);
+}
+
+.card .diff::after{
+    content: '';
+    background-color: blueviolet;
+    width: 80px;
+    top: 10px;
+}
