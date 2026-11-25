@@ -74,6 +74,7 @@ main{
     border-radius: 10px;
     width: xx;
     padding: var(--spacing-sm) 0;
+    margin-bottom: var(--spacing-lg);
 }
 .card > *:not(img){
     padding: 0 var(--spacing-sm);
@@ -94,9 +95,35 @@ main{
     color: var(--color-dark);
 }
 
+.card .diff{
+    margin-bottom: var(--spacing-md);
+}
+
+/* c'etait une bonne idée mais sa marche pas rip
+
+.card .diff::before{
+    background-color:var(--color-main);
+    content: "";
+    border-radius: 8px;
+    width: 80%;
+    height: var(--spacing-sm);
+    left: 10%;
+    position: absolute;
+    top: var(--spacing-lg);
+}
 .card .diff::after{
-    content: '';
-    background-color: blueviolet;
-    width: 80px;
-    top: 10px;
+    background-color:var(--color-sec);
+    content: "";
+    border-radius: 8px;
+    width: 60%;
+    height: var(--spacing-sm);
+    left: 10%;
+    z-index: 4;
+    position: absolute;
+    top: var(--spacing-lg);
+} */
+
+.card .range{
+    left: 5vw;
+    width: 70vw;
 }
